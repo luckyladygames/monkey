@@ -1,12 +1,20 @@
-monkey
-------
+[![Build
+Status](https://secure.travis-ci.org/mostlygeek/monkey.png)](http://travis-ci.org/mostlygeek/monkey)
 
-monkey is a small JavaScript library, written in CoffeeScript for monkey
-patching dependent functionality into objects. Dependency Injection (DI) comes
-from the object-oriented programming world. 
+About
+-----
 
-After looking at a few patterns for doing DI for node.js development I
-eventually settled on monkey-patching to be the most idiomatic javascript way.
+`monkey` is a small JavaScript library, written in CoffeeScript for monkey
+patching dependent functionality into objects. Dependency Injection (DI) is a
+concept that allows components, such database access, to be swapped in/out
+during run time instead of compile time. 
+
+This allows an application to change its functionality without changing its
+logic. This is very useful when testing an application, being able to swap in
+a database component for a fake on that writes to nowhere. 
+
+Since JavaScript allows objects to be changed during runtime, it is easy to
+simply monkey patch in a new piece of functionality for different use cases. 
 
 API
 ---
@@ -16,7 +24,10 @@ API
 * `monkey.patch`
 * `monkey.unpatch` 
 
-Here is an example where `monkey` will be most likely used, in testing. 
+Example
+-------
+
+Here is an example where `monkey` being used to inject functionality for a test 
 
     class User 
         save: () -> # real functionality
@@ -38,5 +49,4 @@ Here is an example where `monkey` will be most likely used, in testing.
         find: () -> null
 
     ... etc ..
-
 
