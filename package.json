@@ -1,5 +1,5 @@
 {
-    "name": "monkey",
+    "name": "monkey-patch",
     "version": "0.0.2",
     "description": "Monkey Patching Dependency Injector",
     "main": "out/monkey.js",
