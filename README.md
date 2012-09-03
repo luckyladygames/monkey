@@ -17,6 +17,9 @@ API
 * `monkey.unpatch` 
 
 Here is an example where `monkey` will be most likely used, in testing. 
+    class User 
+        save: () -> # real functionality
+        find: (id) -> # look up the user
 
     user = new User
     monkey.patch user, 
