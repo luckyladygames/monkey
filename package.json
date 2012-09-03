@@ -2,9 +2,10 @@
     "name": "monkey",
     "version": "0.0.2",
     "description": "Monkey Patching Dependency Injector",
-    "main": "src/monkey.js",
+    "main": "out/monkey.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "postinstall" : "coffee -c -b -o out src"
+       ,"test": "mocha --compilers coffeescript:coffee-script --require should"
     },
     "repository": "",
     "keywords": [
