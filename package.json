@@ -5,7 +5,7 @@
     "main": "out/monkey.js",
     "scripts": {
         "postinstall" : "coffee -c -b -o out src"
-       ,"test": "mocha --compilers coffeescript:coffee-script --require should"
+       ,"test": "mocha --compilers coffee:coffee-script --require should"
     },
     "repository": "",
     "keywords": [
