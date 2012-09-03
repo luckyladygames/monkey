@@ -1,0 +1,17 @@
+{
+  "name": "monkey",
+  "version": "0.0.1",
+  "description": "Monkey Patching Dependency Injector",
+  "main": "monkey.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "dependency",
+    "injection",
+    "monkey"
+  ],
+  "author": "Benson Wong <mostlygeek@gmail.com>",
+  "license": "MIT"
+}
