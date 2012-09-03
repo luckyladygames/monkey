@@ -1,8 +1,8 @@
 {
     "name": "monkey",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Monkey Patching Dependency Injector",
-    "main": "monkey.js",
+    "main": "src/monkey.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
